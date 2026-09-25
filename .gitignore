@@ -1,0 +1,23 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.log
+*.tmp
+    
+# Build outputs
+#[Dd]ebug/
+#[Rr]elease/
+bin/debug/*
+!bin/debug/DevProfiles
+bin/release/*
+!bin/release/DevProfiles
+obj/
+
+# Packages
+packages/
+    
+# Executables and libraries
+*.exe
+*.dll
+*.pdb
