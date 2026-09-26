@@ -1,25 +1,21 @@
-# SPM-STMTB-LVSD
+# SPM-Test-Board
 
 ![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
-![STM32](https://img.shields.io/badge/MCU-STM32C092KBT6-blue.svg)
 
 ## 概要
 
-SPM-STMTBを使用した低電圧バイポーラステッピングモータードライバ(Low Voltage Stepping motor Driver)
-ドライバICはToshibaのTC78S600FTGを使用。\
-https://toshiba.semicon-storage.com/jp/semiconductor/product/motor-driver-ics/stepping-motor-driver-ics/detail.TC78S600FTG.html
+SPM-ESPSMボードを利用した通信テストプログラム。\
+https://github.com/caketetu/SPM-ESPSM-V1\
+主にハードウェアのチェックに使用。
 
 ## 機能
 
-* ステッピングモーターの定電流制御
-* 速度制御モード、位置制御モード
-* 自動加減速制御
-* RS485,CANインターフェース
-* Enable信号入力
-* リミットセンサーによる原点復帰、リミット停止
-* エンコーダー入力による脱調検知 
+* RS485のパロットバック
+* CAN通信の確認
+* SPI通信の確認
 
+<!--
 ## ピンアサイン
 | Function       | Pin  | 備考 |
 | -------------- | ---- | ---- |
@@ -55,20 +51,17 @@ https://toshiba.semicon-storage.com/jp/semiconductor/product/motor-driver-ics/st
 | RCC_MCO        | PF2  |   SYS-DEBUG   |
 
 ※SYS-はSPM共通インターフェース
+-->
 
 ## 開発環境
 
-| 項目       | 内容                      |
+| 項目       | 内容                   |
 | -------- | ----------------------- |
-| MCU      | STM32C092KBT6           |
-| IDE      | STM32CubeIDE for VSCode |
-| CubeMX   | STM32CubeMX 6.15.0      |
-| Firmware | STM32CubeC0             |
-| Language | C                       |
+| IDE      | Visual Studio2022 |
+
+
+## インストール
 
 ## 実装予定機能
 
-* [ ] CAN通信
-* [ ] リミット検知
-* [ ] 原点復帰
-* [ ] エンコーダー脱調検知
+* [ ] SPI通信の確認
